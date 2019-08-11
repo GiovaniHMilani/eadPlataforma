@@ -11,7 +11,7 @@ export default function ListItem(props) {
         <p>{props.user.email}</p>
         <p>{props.user.phone}</p>
         <p>R$ {props.user.amount.replace('.',',')}</p>
-        {props.user.status === '0' ? <p>Adimplente</p> : <p style={{color:'#ff0000'}}>Inadimplentes</p>}
+        {props.user.status === '0' ? <p>Adimplente</p> : <p style={{color:'#ff0000'}}>Inadimplente</p>}
       </div>
     </li>
   );
