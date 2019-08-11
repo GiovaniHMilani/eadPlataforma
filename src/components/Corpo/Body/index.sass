@@ -1,0 +1,75 @@
+@import '../../../theme'
+
+.body
+  padding: 25px
+  width: 100%
+
+.container-geral
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 10px
+
+
+.titulo 
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-bottom: 15px
+
+.separator
+  width: 4px
+  height: 20px
+  background: $principal
+
+.titulo p
+  font-size: 16px
+  color: $font
+  margin-left: 5px
+
+.lista
+  display: flex
+  flex-direction: column
+  align-items: center
+  list-style: none
+
+.button-area
+  margin-top: 25px
+  width: 98%
+  height: 10px
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+
+.button-area p 
+  margin: 0 10px
+  color: $font
+  font-size: 10px
+  line-height: 18px
+
+.button-area strong
+  color: $principal
+
+
+.button-area button
+  width: 18px
+  height: 18px
+  border: 0
+  background: $principal
+  cursor: pointer
+  padding: 2px
+  border-radius: 2px
+
+@media only screen and (max-width: 955px)
+  .lista
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+  .container-geral
+    grid-template-columns: repeat(2 , 1fr)
+
+@media only screen and (max-width: 690px)
+  .lista
+    grid-template-columns: repeat(1, 1fr)
+
+  .container-geral
+    grid-template-columns: repeat(1 , 1fr)
